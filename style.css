@@ -1,0 +1,107 @@
+body{
+    background-color: #051e36;
+    margin: 40px auto;
+    padding: 10% 10%;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    display: grid;   
+    flex-direction: wrap;
+    justify-content:center;
+    
+}
+
+div.container{
+    display: grid;
+    grid-template-columns: repeat(2,calc(( 100% - 1 * 1rem )/2));
+    grid-template-areas:
+    "a "
+    " s " 
+    " i"
+    " 4  "
+    " .  5 ";
+    gap: 0.5rem;
+    background-color:white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;      
+     
+    
+}
+.label.input-element:nth-child(1){
+    grid-area:a;
+    background-color: red;
+    font: 1em sans-serif;color: pink;
+    padding-left: 6rem;
+    padding: 0.5rem;   
+}
+
+div>input:nth-child(1){
+    grid-area: "a";
+    background-color: #051e36;
+}
+.container>div:nth-child(2){
+    grid-area: 2;
+    background-color: blueviolet;
+    font: 1em sans-serif;color: pink;
+    padding-left: 1rem;
+    padding: 1rem;
+
+}
+
+.input-element:nth-child(3){
+    grid-area: 3;
+    font: 1em sans-serif;color: pink;
+    background-color: blue;
+    padding-left: 1rem;
+    padding: 0.5rem;
+
+}
+
+
+
+
+.textfield{ 
+    background-color: white;
+}
+label{
+
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+input{
+    padding-left: 5rem;
+
+}
+
+header{
+    text-align: center;
+    margin-top: 10%;
+}
+
+
+.button:nth-child(4){
+    grid-area: 4;
+    padding: 20px;
+    border-style:solid;
+    border: 1rem;
+    border-color: black; 
+    background-color: brown;
+    
+}
+button{
+    background-color: rgba(100, 128, 221, 0.664);
+    border-radius: 7px;
+
+}
+footer{
+    text-align: center;
+}
+/* .container{
+    padding: 2.5rem; 
+    grid-template-columns: grid;
+      
+    
+} */

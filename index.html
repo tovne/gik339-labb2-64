@@ -3,13 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Lab 2 </title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+<style>
+    :root{
+      --red: #db0a0a;
+      --purple: #5e0741; 
+      --ligth-green:#0acf6d;
+      --green:#2d9e58;
+      --blue:#2a16aa;
+      --pink:#ec0d63;
+      --black: #000000;
+      --white:#fff;
+    }
+</style>
 
 </head>
-<body>
-    <h1>Lab 2 thihi</h1>
-    <p>Lite text thihi</p>
 
+<body>
+    <header>
+        <h1>Lab 2 - Grupp 64</h1>
+    </header>
+    
+
+    <div class="container">
+
+        <div class="input-element__color">
+            <label class="color" for="text">Färg:</label>
+            <!-- input styr textrutan -->
+            <input type="text" name="color" id="color" class="textfield">
+        </div>
+        <div class="input-element__content">
+            <label for="content">Innehåll:</label>
+            <input type="text" name="Content" id="content" class="textfield">
+        </div>
+        <div class="input-element__divStyle"> 
+            <label for="divStyle">Ändra stil:</label>
+            <input type="checkbox" name="divStyle" id="divStyle" class="checkbox">
+        </div>
+        
+        <div class="button">
+            <button id="MyDiv">Ta bort</button>
+
+        <div class="box">
+            <div><textarea name="box-element" id="box-element"></textarea></div> 
+        </div>
+    </div>
+</div>
+    
+
+<footer>
+    <small> 2025 GIK339 - Grupp 64</small> 
+</footer>
 </body>
 </html>
